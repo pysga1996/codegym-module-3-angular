@@ -1,0 +1,13 @@
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-item {
+  background-color: azure;
+}
+
+.todo-item:hover {
+  cursor: pointer;
+  background-color: beige;
+}

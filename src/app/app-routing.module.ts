@@ -7,20 +7,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'home',
-        pathMatch: 'full',
+        loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule)
       },
       {
-        path: 'home',
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
-      },
-      {
-        path: 'calculator',
-        loadChildren: () => import('./calculator/calculator.module').then(m => m.CalculatorModule)
-      },
-      {
-        path: 'blog',
-        loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
+        path: 'feature',
+        loadChildren: () => import('./feature/feature.module').then(m => m.FeatureModule)
       }
     ]
   },
