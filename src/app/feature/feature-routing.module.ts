@@ -29,6 +29,18 @@ const routes: Routes = [
   {
     path: 'gallery',
     loadChildren: () => import('./gallery/gallery.module').then(m => m.GalleryModule)
+  },
+  {
+    path: 'image-slider',
+    loadChildren: () => import('./img-slider/img-slider.module').then(m => m.ImgSliderModule)
+  },
+  {
+    path: 'timeline',
+    loadChildren: () => import('./timeline/timeline.module').then(m => m.TimelineModule)
+  },
+  {
+    path: 'pet-profile',
+    loadChildren: () => import('./pet-profile/pet-profile.module').then(m => m.PetProfileModule)
   }
 ];
 

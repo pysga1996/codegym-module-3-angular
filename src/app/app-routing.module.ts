@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {AuthGuard} from './auth.guard';
 
 const routes: Routes = [
   {
@@ -7,10 +8,13 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule)
+        loadChildren: () => import('./core/shared.module').then(m => m.SharedModule)
       },
       {
         path: 'feature',
+        canActivate: [AuthGuard],
+        canActivateChild: [AuthGuard],
+        canLoad: [AuthGuard],
         loadChildren: () => import('./feature/feature.module').then(m => m.FeatureModule)
       }
     ]

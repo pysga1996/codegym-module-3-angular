@@ -1,5 +1,5 @@
 <!-- Highlight Card -->
-<div class="card highlight-card card-small">
+<div class="card highlight-card p-4">
 
   <svg id="rocket" alt="Rocket Ship" xmlns="http://www.w3.org/2000/svg" width="101.678"
        height="101.678" viewBox="0 0 101.678 101.678">
@@ -29,8 +29,12 @@
 </div>
 
 <!-- Resources -->
-<h2>Resources</h2>
-<p>Here are some demo applications:</p>
+<div class="row justify-content-center">
+  <h2 >Resources</h2><br>
+</div>
+<div class="row justify-content-center">
+  <p>Here are some demo applications:</p>
+</div>
 
 <div class="card-container">
   <a class="card" [routerLink]="['/','feature','calculator']">
@@ -61,16 +65,16 @@
     <span>Image Gallery</span>
   </a>
 
-  <a class="card" [routerLink]="['/','feature','blog']">
-    <span>Angular Blog</span>
+  <a class="card" [routerLink]="['/','feature','image-slider']">
+    <span>Image Slider</span>
   </a>
 
-  <a class="card" [routerLink]="['/','feature','blog']">
-    <span>Angular Blog</span>
+  <a class="card" [routerLink]="['/','feature','timeline']">
+    <span>Timeline</span>
   </a>
 
-  <a class="card" [routerLink]="['/','feature','blog']">
-    <span>Angular Blog</span>
+  <a class="card" [routerLink]="['/','feature','pet-profile']">
+    <span>Pet Profile</span>
   </a>
 
 </div>

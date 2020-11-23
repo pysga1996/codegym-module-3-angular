@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import {ITodo} from '../../model/todo.interface';
+import {ITodo} from '../../model/todo';
 
 let id = 1;
 @Component({

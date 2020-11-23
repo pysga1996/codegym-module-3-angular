@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ImageSlideRoutingModule } from './image-slide-routing.module';
+import { ProgressBarRoutingModule } from './progress-bar-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    ImageSlideRoutingModule
+    ProgressBarRoutingModule
   ]
 })
-export class ImageSlideModule { }
+export class ProgressBarModule { }

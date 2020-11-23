@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {IWord} from '../model/word.interface';
+import {IWord} from '../model/word';
 
 @Injectable()
 export class DictionaryService {

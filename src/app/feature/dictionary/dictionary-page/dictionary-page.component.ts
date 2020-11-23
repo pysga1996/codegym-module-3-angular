@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {DictionaryService} from '../../../service/dictionary.service';
-import {IWord} from '../../../model/word.interface';
+import {IWord} from '../../../model/word';
 
 @Component({
   selector: 'app-dictionary-page',

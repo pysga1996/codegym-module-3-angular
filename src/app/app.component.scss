@@ -69,6 +69,18 @@ p {
   align-items: center;
 }
 
+.logout {
+  border-radius: 0.2rem;
+  margin-inline: 1rem;
+  padding: 0.5rem;
+  background-color: inherit;
+}
+
+.logout:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
 @media screen and (max-width: 575px) {
   svg#rocket-smoke {
     display: none;
